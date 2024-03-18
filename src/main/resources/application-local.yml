@@ -6,4 +6,11 @@ server:
 spring:
   application:
     name: omni-home-api
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-kweju3lbtrp3l5vx.us.auth0.com/
+#          manually set the jwk-set-uri if the issuer-uri is not in standard discovery format
+#          jwk-set-uri: http://localhost:8080/auth/realms/omni-home/protocol/openid-connect/certs
 

@@ -6,4 +6,8 @@ server:
 spring:
   application:
     name: omni-home-api
-
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://dev-kweju3lbtrp3l5vx.us.auth0.com/
